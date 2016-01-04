@@ -1,0 +1,66 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>jung-visualization</artifactId>
+  <packaging>jar</packaging>
+  <url>http://jung.sourceforge.net/site/jung-visualization</url>
+  <name>JUNG</name>
+  <description>
+  Core visualization support for the jung2 project
+  </description>
+  <parent>
+  	<groupId>net.sf.jung</groupId>
+    <artifactId>jung2</artifactId>
+    <version>2.0.1</version>
+  </parent>
+
+  <build>
+   	<plugins>
+ 	  <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <configuration>
+          <archive>
+            <manifest>
+              <addClasspath>true</addClasspath>
+            </manifest>
+          </archive>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+  <organization>
+  	<name>CICESE Research Center and CETYS University</name>
+  </organization>
+  <dependencies>
+  	<dependency>
+  		<groupId>net.sourceforge.collections</groupId>
+  		<artifactId>collections-generic</artifactId>
+  		<version>4.01</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>java3d</groupId>
+  		<artifactId>j3d-core</artifactId>
+  		<version>1.3.1</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>java3d</groupId>
+  		<artifactId>j3d-core-utils</artifactId>
+  		<version>1.3.1</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>colt</groupId>
+  		<artifactId>colt</artifactId>
+  		<version>1.2.0</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>java3d</groupId>
+  		<artifactId>vecmath</artifactId>
+  		<version>1.3.1</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>javax.media</groupId>
+  		<artifactId>jai_core</artifactId>
+  		<version>1.1.3</version>
+  	</dependency>
+  </dependencies>
+</project>
